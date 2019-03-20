@@ -69,4 +69,3 @@ $(window).scroll(function () {
     $('#scrolltop').stop(true, true).fadeOut();
   }
 });
-
