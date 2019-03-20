@@ -51,7 +51,7 @@
           <div class="h3 pb-3 text-center text-white" data-aos="fade-up">Why Work With Us?</div>
           <p class="px-5 pb-5 text-center text-white" data-aos="fade-up">We are a remote team of independent developers
             bringing expertise into what we do. We regularly pick up gigs which keeps us up to date with the latest
-            technologies. Zijela is registered in Nigeria with the Corporate Affairs Commission</p>
+            technologies. We always transparent in our dealings with you by giving you access to your website and other applications details while we also manage it for you incase you want to severe business with us at any time which we think you will not. Zijela is registered in Nigeria with the Corporate Affairs Commission</p>
           <div class="row">
             <div class="col-md-4">
               <div class="card mb-3" data-aos="flip-left">
@@ -462,10 +462,10 @@
                         <label>Hey, what is 2+2?</label>
                         <div class="col">
                             <input id="captcha" class="form-control" type="number" name="captcha" placeholder="*Answer is 4. Type it here"
-                            required="required" onchange="releaseButton()"/>
+                            required="required" onkeyup="releaseButton()" onkeydown="releaseButton()"/>
                             <script>
                             function releaseButton(){
-                              if($('#captcha').val()===4){
+                              if($('#captcha').val()=='4'){
                                 $('#submit-contact').prop('disabled', false);
                               }else{
                                 $('#submit-contact').prop('disabled', true);
