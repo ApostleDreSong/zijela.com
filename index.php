@@ -585,6 +585,7 @@
           </div>
         </div>
       </div>
+      <?php include ('mail.php'); ?>
       <div class="da-contact" id="contact">
         <div class="da-contact-detail" data-aos="zoom-in" data-aos-duration="1000">
           <div class="container">
@@ -593,7 +594,7 @@
               <div class="row">
                 <div class="col-md-7 col-sm-12 mb-3">
                   <div class="da-contact-message">
-                    <form action="https://formspree.io/ademesodamilare@gmail.com" method="POST">
+                    <form action=" " method="POST">
                       <div class="row">
                         <div class="col-md-6 col-sm-12 mb-3">
                           <input class="mr-3 form-control" type="text" name="first-name" placeholder="*First Name"
@@ -605,13 +606,13 @@
                       </div>
                       <div class="row mb-3">
                         <div class="col">
-                          <input class="form-control" type="text" name="Subject" placeholder="*Subject"
+                          <input class="form-control" type="text" name="subject" placeholder="*Subject"
                             required="required" />
                         </div>
                       </div>
                       <div class="row mb-3">
                         <div class="col">
-                          <input class="form-control" type="email" name="_replyto" placeholder="*E-mail"
+                          <input class="form-control" type="email" name="email" placeholder="*E-mail"
                             required="required" />
                         </div>
                       </div>
@@ -645,7 +646,7 @@
                       </div>
                       <div class="row">
                         <div class="col">
-                          <button id="submit-contact" class="btn btn-primary" type="submit" disabled>Send</button>
+                          <button id="submit-contact" class="btn btn-primary" name="submit" type="submit" disabled>Send</button>
                         </div>
                       </div>
                     </form>
